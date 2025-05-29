@@ -15,7 +15,7 @@ const secondsEl = document.querySelector("[data-seconds]");
 let userSelectedDate = null;
 let timerId = null;
 
-// Спочатку кнопка Start неактивна
+
 startButton.disabled = true;
 
 flatpickr(input, {
