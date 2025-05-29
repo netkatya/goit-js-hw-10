@@ -1,5 +1,6 @@
 ul, ol {
   list-style: none;
+  padding: 0;
 }
 
 a {
@@ -8,6 +9,33 @@ a {
 
 body {
   font-family: "Montserrat", sans-serif;
+}
+
+.list {
+  border-radius: 8px;
+  width: 600px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin: 0 auto;
+  background-color: #2e2f42;
+  margin-top: 100px;
+}
+
+.list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 44px;
+  border-radius: 8px;
+  background: #cfcfcf;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.04em;
 }
 
 .back {
@@ -60,20 +88,18 @@ body {
   letter-spacing: 0.04em;
   cursor: pointer;
   transition: background 250ms ease-in-out;
-}
-
-.disabled {
-  color: #989898;
-  background: #cfcfcf;
-}
-
-.active {
   color: #fff;
   background: #4e75ff;
 }
 
 .button:hover {
   background: #6c8cff;
+}
+
+.button:disabled {
+  background: #cfcfcf;
+  color: #989898;
+  cursor: not-allowed;
 }
 
 .timer {
